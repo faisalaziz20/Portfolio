@@ -1,0 +1,36 @@
+/* Web Development Section */
+.webdev-section {
+  background-color: var(--snd-bg-color);
+  padding: 6rem 8%;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.webdev-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 4rem;
+  color: var(--main-color);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.webdev-section p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .webdev-section {
+    padding: 4rem 5%;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,101 @@
+
+.large-first-letter::first-letter {
+      font-size: 40px;
+      font-weight: bold;
+      color: #040807;
+    }
+    /* Content Section Titles */
+.main-content h2 {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    margin: 3rem 0 2rem;
+    border-bottom: 2px solid var(--main-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.main-content h3 {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.main-content ul {
+    margin: 1rem 0 2rem 2.5rem;
+    font-size: 1.7rem;
+    list-style-type: disc;
+    color: var(--text-color);
+}
+
+.main-content li {
+    margin-bottom: 0.8rem;
+}
+
+/* First Paragraph Large Letter */
+.large-first-letter::first-letter {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--main-color);
+    float: left;
+    margin-right: 0.6rem;
+    line-height: 1;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 5rem;
+}
+
+/* Section ID Anchors (smooth scrolling fix) */
+[id]::before {
+    content: "";
+    display: block;
+    height: 100px; /* height of fixed header */
+    margin-top: -100px;
+    visibility: hidden;
+}
+/* Responsive navbar */
+#menu-icon {
+  display: none;
+  font-size: 3.6rem;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+/* Show menu icon on small screens */
+@media (max-width: 991px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 225px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color);
+    transition: all 0.5s ease;
+    padding: 2rem;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    margin: 1.5rem 0;
+    font-size: 1.9rem;
+    color: var(--bg-color);
+  }
+}
