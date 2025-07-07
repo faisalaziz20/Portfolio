@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/sh.css">
+  <link rel="stylesheet" href="../css/devdev.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <a href="INDEX.HTML" class="logo">Shah Faisal Aziz</a>
+
+    <!-- Menu icon for small screens -->
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <!-- Navigation Links -->
+    <nav class="navbar" id="navbar">
+      <a href="INDEX.HTML">Home</a>
+      <a href="#about-webdev">About</a>
+    </nav>
+  </header>
+
+  <section id="ui-design" class="webdev-section">
+  <div class="container">
+    <h2 class="section-title">Understanding User Interface (UI) Design</h2>
+
+    <p>
+      I have a strong interest in <strong>User Interface (UI) design</strong>, which plays a crucial role in how users interact with digital products.
+      A well-crafted UI not only enhances visual appeal but also improves usability and accessibility.
+    </p>
+
+    <p>
+      My approach to UI design involves creating clean, modern, and intuitive layouts using <strong>HTML, CSS, and JavaScript</strong>, with frameworks like
+      <strong>React.js</strong> for building dynamic components. I ensure consistency across the interface by applying design principles such as
+      alignment, contrast, hierarchy, and spacing.
+    </p>
+
+    <p>
+      During the development of my projects, I focus on responsive design using <strong>media queries and flexbox/grid systems</strong> to
+      ensure the UI adapts gracefully to different screen sizes and devices.
+    </p>
+
+    <p>
+      I also incorporate UI libraries like <strong>Bootstrap</strong> and icon sets like <strong>Boxicons</strong> to enhance user interaction
+      without compromising performance. Every UI decision I make is guided by a desire to make the interface simple, interactive, and user-friendly.
+    </p>
+  </div>
+</section>
+
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('#navbar');
+
+    menuIcon.onclick = () => {
+      menuIcon.classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+      menuIcon.classList.remove('bx-x');
+      navbar.classList.remove('active');
+    };
+  </script>
+
+</body>
+</html>

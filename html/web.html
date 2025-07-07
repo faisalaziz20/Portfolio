@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/sh.css">
+  <link rel="stylesheet" href="../css/devdev.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <a href="INDEX.HTML" class="logo">Shah Faisal Aziz</a>
+
+    <!-- Menu icon for small screens -->
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <!-- Navigation Links -->
+    <nav class="navbar" id="navbar">
+      <a href="INDEX.HTML">Home</a>
+      <a href="#about-webdev">About</a>
+    </nav>
+  </header>
+
+  <section id="about-webdev" class="webdev-section">
+  <div class="container">
+    <h2 class="section-title">About Me – Focused on Web Development</h2>
+
+    <p>
+      My name is <strong>Shah Faisal Aziz</strong>, a passionate and detail-oriented Computer Science Engineering student from East Champaran, Bihar.
+      I am currently pursuing my <strong>Bachelor of Technology (B.Tech)</strong> at Rungta College of Engineering and Technology, Bhilai,
+      where I have maintained a <strong>CGPA of 7.474</strong>.
+    </p>
+
+    <p>
+      I specialize in <strong>web development</strong> with a strong command over the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js).
+      My journey has been fueled by structured learning and hands-on project development.
+    </p>
+
+    <p>
+      I have completed two comprehensive certification programs in Full Stack Web Development:
+      a <strong>4-month offline course</strong> from Coding Spoon and a <strong>4-month online course</strong> from Simplilearn.
+      These covered HTML, CSS, JavaScript, React.js, AngularJS, Node.js, Express.js, and MongoDB.
+    </p>
+
+    <p>
+      I’ve built real-world projects like a <strong>Doctor Appointment Booking System</strong> and a
+      <strong>Resume Analysis System</strong> where I developed frontend interfaces, backend APIs, and managed databases with a focus on
+      responsive design and seamless user experience.
+    </p>
+
+    <p>
+      I am also an <strong>active competitive programmer</strong> with over <strong>439 problems solved</strong> on platforms like LeetCode,
+      Coding Ninjas, and GeeksforGeeks, which has strengthened my algorithmic and problem-solving skills.
+    </p>
+
+    <p>
+      With strong fundamentals, project experience, and a drive to keep learning, I aim to develop efficient, scalable, and impactful web applications.
+    </p>
+  </div>
+</section>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('#navbar');
+
+    menuIcon.onclick = () => {
+      menuIcon.classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+      menuIcon.classList.remove('bx-x');
+      navbar.classList.remove('active');
+    };
+  </script>
+
+</body>
+</html>
